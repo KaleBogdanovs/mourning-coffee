@@ -1,0 +1,373 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% assign meta = site.data.meta %}
+		<!-- =================================== -->
+		<!-- 		  COMPATIBILITY 			 -->
+		<!-- =================================== -->
+		
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+
+		<!-- =================================== -->
+		<!-- 			  TITLE 			 	 -->
+		<!-- =================================== -->
+
+		<title>{{ site.title }}</title>
+
+		<!-- =================================== -->
+		<!-- 			MORDERNIZR 			 	 -->
+		<!-- =================================== -->
+
+		<script src="assets/js/modernizr.js"></script>
+		
+		<!-- =================================== -->
+		<!-- 			  STYLES 				 -->
+		<!-- =================================== -->
+		
+		<!-- BOOTSTRAP MIN -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		
+		<!-- MEDIA ELEMENT -->
+		<link href="assets/css/mediaelementplayer.min.css" rel="stylesheet" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+		
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+		
+		<!-- FONT AWESOME -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+		
+		<!-- =================================== -->
+		<!-- 		 	THEME COLOR 			 -->
+		<!-- =================================== -->
+		
+		<meta name="theme-color" content="#fff" />
+		
+		<!-- =================================== -->
+		<!-- 			 VIEWPORT 				 -->
+		<!-- =================================== -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+
+		<!-- =================================== -->
+		<!-- 			  AUTHOR 				 -->
+		<!-- =================================== -->
+
+		<meta name="author" content="{{meta.author}}" />
+
+		<!-- =================================== -->
+		<!-- 			 CONTENT 				 -->
+		<!-- =================================== -->
+
+		<meta name="keywords" content="{{meta.keywords}}" />
+		<meta name="description" content="{{meta.description}}" />
+
+		<!-- =================================== -->
+		<!-- 			 ROBOTS 				 -->
+		<!-- =================================== -->
+
+		<meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+		<meta name="robots" content="index, follow">
+		<meta name="msnbot" content="NOODP" />
+
+		<!-- =================================== -->
+		<!-- 			 FACEBOOK 				 -->
+		<!-- =================================== -->
+
+		<meta property="og:locale" content="en" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{{meta.title}}" />
+		<meta property="og:description" content="{{meta.description}}" />
+		<meta property="og:url" content="{{site.url}}" />
+		<meta property="og:site_name" content="{{meta.title}}" />
+		<meta property="og:image" content="{{meta.siteImage}}" />
+
+		<!-- =================================== -->
+		<!-- 			  TWITTER 				 -->
+		<!-- =================================== -->
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="{{site.url}}" />
+		<meta name="twitter:creator" content="{{meta.twitterHandle}}" />
+		<meta name="twitter:title" content="{{site.title}}" />
+		<meta name="twitter:description" content="{{meta.description}}" />
+		<meta name="twitter:domain" content="{{meta.domain}}" />
+		<meta name="twitter:image" content="{{meta.image}}" />
+
+		<!-- =================================== -->
+		<!-- 			  FAVICON 				 -->
+		<!-- =================================== -->
+		
+		<link rel="icon" href="assets/img/favicon.png" />
+		<link rel="shortcut icon" href="assets/img/favicon.png" />
+
+	</head>
+
+	<body itemscope itemtype="http://schema.org/WebSite">
+		
+		<!-- ===== HEADER ===== -->
+		<header class="header absolute" itemscope itemtype="http://schema.org/Organization">
+			<div class="container">
+			
+				<!-- ===== LOGO ===== -->
+				<h1 class="logo"><a href="index.html">MOURNING COFFEE</a></h1>
+				
+				<!-- ===== NAVIGATION ===== -->
+				<nav class="navigation">
+					<!-- ===== MENU ===== -->
+					<ul class="menu">
+						<li class="menuitem"><a href="#latest-episodes">Latest Episodes</a></li>
+						<li class="menuitem"><a href="#mourning-baristas">Mourning Baristas</a></li>
+					</ul>
+					<!-- ===== HAMBURGUER ICON ===== -->
+					<a href="#" class="btn-hamburguer-menu"><i class="fa fa-bars"></i></a>
+				</nav>
+				
+			</div>
+		</header>
+		
+		
+		
+		<!-- ===== PAGE HEADER ===== -->
+			<header class="page-header" style="background-image: url(https://assets.podomatic.net/ts/4a/c2/8c/mourningcoffeepodcast/300x300_11977392.jpg?1491148584)">
+				<div class="page-header-inner">
+					<div class="container">
+
+
+						<!-- ===== PAGE HEADER CONTENT ===== -->
+						<div class="page-header-content text-center">
+						  <p>A little stuff about this great podcast.</p>
+						</div>
+
+					</div>
+				</div>
+			</header>
+		
+		
+		<!-- ===== MAIN ===== -->
+		<main id="main" class="main">
+			
+			<!-- ===== PODCAST LIST ===== -->
+			<section id="#episodes" class="section-positive">
+				<div class="container">
+					
+					<!-- ===== SECTION TITLE ===== -->
+					<h2 class="title-default">Latest Episodes</h2>
+					
+					<div class="row" id="latest-episodes"></div>
+
+					<div class="row">
+						<div class="col-sm-12 mb-50">
+							<a href="podcasts.html" class="btn btn-primary btn-block btn-lg">View more episodes</a>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			
+			<!-- ===== ABOUT US ===== -->
+			<section id="about-us" class="section-negative">
+				<div class="container">
+					
+					<!-- ===== SECTION TITLE ===== -->
+					<h2 class="title-default text-center" id="mourning-baristas">Mourning Baristas</h2>
+					
+					<div class="row mb-30 row-centered">
+						
+						<!-- ===== TEAM CARD ===== -->
+						{% for person in site.data.people %}
+						<div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 mb-40 col-centered">
+							<div class="team-card">
+								<figure class="team-card-image"><img src="{{person.image}}" alt="John Doe" title="John Doe" /></figure>
+								<div class="team-card-content">
+									<h2 class="team-card-title">{{person.name}}</h2>
+									<p class="team-card-job">{{person.role}}</p>
+									<p class="team-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat itaque optio minus perferendis tempora, libero in fugiat, quisquam molestiae.</p>
+									<ul class="team-card-social">
+										{% if person.facebook %}
+											<li class="social-item"><a href="{{person.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+										{% endif %}
+										{% if person.twitter %}
+											<li class="social-item"><a href="{{person.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										{% endif %}
+										{% if person.instagram %}
+											<li class="social-item"><a href="{{person.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+										{% endif %}
+										{% if person.homepage %}
+											<li class="social-item"><a href="{{person.homepage}}" target="_blank"><i class="fa fa-link"></i></a></li>
+										{% endif %}
+									</ul>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+						
+						
+					</div>
+					
+				</div>
+			</section>
+			
+
+			
+		</main>
+		
+		<!-- ===== FOOTER ===== -->
+		<footer class="footer">
+			
+			<!-- ===== FOOTER CONTENT INFORMATION ===== -->
+			
+			
+			<!-- ===== FOOTER INFORMATION ===== -->
+			<section class="footer-credits">
+				<div class="container">
+					
+					<div class="row">
+						
+						<!-- ===== CREDIT LOGO ===== -->
+						<div class="col-sm-6" style="color: white">
+							
+						</div>
+						
+						<!-- ===== CREDIT LOGO ===== -->
+						<div class="col-sm-6 text-right">
+							Mourning Coffee - 2017. All rights reserved.
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+			
+		</footer>
+		
+		<!-- =================================== -->
+		<!-- 			  SCRIPTS 				 -->
+		<!-- =================================== -->
+		
+		<!-- JQUERY -->
+		<script src="assets/js/jquery-1.11.min.js"></script>
+
+		
+		<!-- BOOTSTRAP JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- MEDIA ELEMENT -->
+		<script src="assets/js/mediaelement-and-player.min.js"></script>
+		
+		<!-- MAGNIFIC POPUP -->
+		<script src="assets/js/magnific-popup.min.js"></script>
+		
+		<!-- PLACEHOLDER FOR IE -->
+		<script src="assets/js/placeholder.min.js"></script>
+		<script src="assets/js/moment-min.js"></script>
+		<script src="assets/js/episodes.js"></script>
+
+		<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+
+		<script>
+		    function injectScript(url) {
+		      var scriptElement = document.createElement('script');
+		      scriptElement.setAttribute('type', 'text/javascript');
+		      scriptElement.setAttribute('src', url);
+		      document.getElementsByTagName('body')[0].appendChild(scriptElement);
+		    }
+		    function handleResponse(response) {
+			    var feedEpisodes = [];
+			    try {
+				    var items = response.query.results.rss.channel.item	    
+				    if (items) {
+				    		for (var i=0; i < items.length; i++) {
+				    		var item = items[i];
+						    	var currentEp = {
+						    		title: item.title,
+						    		permalink: item.link,
+						    		description: item.summary,
+						    		created: item.created,
+						    		audio: item.enclosure.url,
+						    		duration: item.duration,
+						    		image: item.image.href,
+				    		};
+				    		feedEpisodes.push(currentEp);
+				    	} 
+				    }
+				    else {
+				    		feedEpisodes = staticEpisodes;
+				    	}
+				  }
+				  catch(err) {
+				  	feedEpisodes = staticEpisodes;
+				  }
+				    
+		    	var topEp = feedEpisodes[0];
+					var otherEps = feedEpisodes.slice(1)
+					var topEpDate = new Date(topEp.created);
+					var topEpTemplate = '<div class="col-sm-12 mb-40">' +
+						'<div class="podcast-card full">' +
+							'<figure class="podcast-image"><img src="' + topEp.image + '" alt="Seattle" title="Seattle" /></figure>' +
+							'<div class="podcast-content">' +
+								'<span class="podcast-date">' + moment(topEp.created).format('MMMM Do YYYY') + '</span>' +
+								'<h2 class="podcast-title">' + topEp.title + '</h2>' +
+								'<p class="podcast-excerpt">' + topEp.description + '</p>' +
+								'<ul class="podcast-meta">' +
+									'<li class="item"><i class="fa fa-clock-o"></i> ' + Math.floor(topEp.duration / 60) + ' minutes</li>' +
+									'<li class="item"><a href="' + topEp.permalink +'" class="podcast-play" target="_blank"><i class="fa fa-play"></i> Play Episode</a></li>' +
+								'</ul>' +
+								'<div class="podcast-hero-player-content">' +
+									'<div class="player-container">' +
+										'<audio src="' + topEp.audio +'"></audio>' +
+									'</div>' +
+								'</div>' +
+							'</div>' +
+						'</div>'
+					'</div>';
+
+
+
+
+					$('#latest-episodes').append(topEpTemplate);
+
+					for (var i=0; i < otherEps.length; i++) {
+						var episode = otherEps[i];
+						var otherEpTemplate = '<div class="col-sm-6 mb-40">' +
+							'<div class="podcast-card boxed">' +
+								'<figure class="podcast-image"><img src="' + episode.image + ' " /></figure>' +
+								'<div class="podcast-content">' +
+									'<span class="podcast-date">' + moment(episode.created).format('MMMM Do, YYYY') + '</span>' +
+									'<h2 class="podcast-title">' + episode.title + '</h2>' +
+									//'<p class="podcast-excerpt">' + episode.description + '</p>' +
+									'<ul class="podcast-meta">' +
+										'<li class="item"><i class="fa fa-clock-o"></i> ' + Math.floor(episode.duration / 60) + ' minutes</li>' +
+										'<li class="item"><a href="' + episode.permalink +'" class="podcast-play" target="_blank"><i class="fa fa-play"></i> Play Episode</a></li>' +
+									'</ul>' +
+								'</div>' +
+							'</div>' +
+						'</div>';
+						$('#latest-episodes').append(otherEpTemplate);
+					}
+					$('video, audio').mediaelementplayer({
+						audioWidth: '100%'
+					});
+		    }
+		    document.addEventListener("DOMContentLoaded", function() {
+			    // https://developer.yahoo.com/yql/console/
+			    // select * from feednormalizer where url='http://news.ycombinator.com/rss' and output='atom_1.0'
+			    injectScript("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20feednormalizer%20where%20url%3D'http://mourningcoffeepodcast.podomatic.com/rss2.xml'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=handleResponse");  
+		    }, false );
+
+		</script>
+		
+		<!-- THEME JS -->
+		<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
